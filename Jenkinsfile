@@ -4,8 +4,8 @@ pipeline{
 
 	environment {
 		DOCKERHUB_CREDENTIALS=credentials('algow-dockerhub-token')
-		AWS_ACCESS_KEY_ID     = credentials('jenkins-aws-secret-key-id')
-                AWS_SECRET_ACCESS_KEY = credentials('jenkins-aws-secret-access-key')
+		AWS_ACCESS_KEY_ID     = credentials('algow-aws-secret-key-id')
+                AWS_SECRET_ACCESS_KEY = credentials('algow-aws-secret-access-key')
 
 		AWS_S3_BUCKET = "algow-belt2-artifacts-123456"
                 ARTIFACT_NAME = "Dockerrun.aws.json"
