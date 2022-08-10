@@ -8,6 +8,7 @@ pipeline{
                 AWS_SECRET_ACCESS_KEY = credentials('algow-aws-secret-access-key')
 
 		AWS_S3_BUCKET = "algow-belt2-artifacts-123456"
+		AWS_REGION = "us-east-1"
                 ARTIFACT_NAME = "Dockerrun.aws.json"
                 AWS_EB_APP_NAME = "runaway-algow"
                 AWS_EB_APP_VERSION = "${BUILD_ID}"
